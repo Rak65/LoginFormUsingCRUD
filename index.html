@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form CRUD operation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <fieldset>       <!--draws a box around the related elements -->
+        <legend>     <!-- <legend> tag defines a caption for the <fieldset> element. -->
+            <h2>
+                <form>Login</form>
+            </h2>
+        </legend>
+        <form id="register">
+            <input type="text" name="name" id="name" placeholder="Enter your Name" required><br><br>
+            <input type="email" name="email" id="email" placeholder="Enter your email-id" required><br><br>
+            <input type="number" name="MobileNo" id="MobileNo" placeholder="Enter your MobileNo" required><br><br>
+            <input type="button" value="Submit" id="btn" onclick="Submit()"><br>
+            <input type="reset" value="reset">
+        </form>
+    </fieldset>
+    <div id="msg"></div>
+    <fieldset>
+        <legend>
+            <h2>Data from local storage</h2>
+        </legend>
+        <table border="2" id="table">
+            <tr>
+                <td class="col">Name</td>
+                <td class="col">Email-id</td>
+                <td class="col">MobileNo</td>
+                <td class="col">Action</td>
+            </tr>
+        </table>
+    </fieldset>
+    
+</body>
+<script src="script.js"></script>
+</html>
